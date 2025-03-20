@@ -30,8 +30,11 @@ if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php'))
 | into the script here so we don't need to manually load our classes.
 |
 */
-
 require __DIR__.'/../vendor/autoload.php';
+
+if(env('APP_ENV') == "production"){
+    require __DIR__.'/../home/vendor/autoload.php';
+}
 
 /*
 |--------------------------------------------------------------------------
@@ -45,6 +48,14 @@ require __DIR__.'/../vendor/autoload.php';
 */
 
 $app = require_once __DIR__.'/../bootstrap/app.php';
+
+if(env('APP_ENV') == "production"){
+    $app = require_once __DIR__.'/../home/bootstrap/app.php';
+}
+// set the public path to this directory
+$app->bind('path.public', function() {
+    return __DIR__;
+});
 
 $kernel = $app->make(Kernel::class);
 
