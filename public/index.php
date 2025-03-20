@@ -32,10 +32,6 @@ if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php'))
 */
 require __DIR__.'/../vendor/autoload.php';
 
-if(env('APP_ENV') == "production"){
-    require __DIR__.'/../home/vendor/autoload.php';
-}
-
 /*
 |--------------------------------------------------------------------------
 | Run The Application
@@ -49,9 +45,6 @@ if(env('APP_ENV') == "production"){
 
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
-if(env('APP_ENV') == "production"){
-    $app = require_once __DIR__.'/../home/bootstrap/app.php';
-}
 // set the public path to this directory
 $app->bind('path.public', function() {
     return __DIR__;
