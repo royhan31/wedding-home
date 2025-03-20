@@ -46,7 +46,7 @@ login-design
     flex-wrap: wrap;
 }
 .wpo-accountInfoHeader a img{
-    max-width: 200px;
+    max-width: 250px;
 }
 
 .wpo-accountInfoHeader h2 a {
@@ -66,10 +66,11 @@ login-design
     align-items: center;
     justify-content: center;
     text-transform: capitalize;
-    font-size: 14px;
+    font-size: 18px;
     color: #062265;
     border: 2px solid #fff;
     transition: all .4s ease-in-out 0s;
+    margin: 10px 0;
 }
 .wpo-accountInfo .wpo-accountBtn:hover {
     background: transparent;
@@ -81,11 +82,11 @@ login-design
     margin-top: 20px;
 }
 .fromTitle h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 40px;
+    margin-bottom: 15px;
 }
 .fromTitle p {
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 40px;
 }
 
@@ -103,7 +104,9 @@ login-design
     border: 1px solid #e5e5e5 !important;
 }
 
-
+.form-style label {
+    margin-bottom: 5px;
+}
 
 
 input[type=checkbox] + label {
@@ -140,8 +143,8 @@ input[type=checkbox] + label:active:before {
 }
 
 input[type=checkbox]:checked + label:before {
-  background-color: #86a0b6;
-  border-color: #86a0b6;
+  background-color: #B5A2BD;
+  border-color: #B5A2BD;
   color: #fff;
 }
 
@@ -166,7 +169,7 @@ input[type=checkbox]:checked:disabled + label:before {
 .forget-btn a{
     display: inline-block;
     font-size: 14px;
-    color: #86a0b6;
+    color: #B5A2BD;
 }
 .input-box label {
     color: #676B79;
@@ -177,9 +180,9 @@ input[type=checkbox]:checked:disabled + label:before {
 .wpo-accountForm .wpo-accountBtn{
     font-size: 16px;
     padding: 10px 20px;
-    border: 2px solid #86a0b6;
+    border: 2px solid #B5A2BD;
     width: 100%;
-    background: #86a0b6;
+    background: #B5A2BD;
     color:#fff;
    transition: all .4s ease-in-out 0s; 
    margin-top: 30px;
@@ -203,7 +206,7 @@ input[type=checkbox]:checked:disabled + label:before {
     background: #fff;
     position: relative;
     top: -14px;
-    color: #86a0b6;
+    color: #B5A2BD;
 }
 .wpo-socialLoginBtn {
     display: flex;
@@ -217,7 +220,7 @@ input[type=checkbox]:checked:disabled + label:before {
     height: 40px;
     width: 50px;
     min-width: 50px;
-    font-size: 15px;
+    font-size: 18px;
     border-radius: 3px;
     overflow: hidden;
     cursor: pointer;
@@ -246,8 +249,8 @@ input[type=checkbox]:checked:disabled + label:before {
 }
 .subText a {
     display: inline-block;
-    font-size: 14px;
-    color: #86a0b6;
+    font-size: 18px;
+    color: #B5A2BD;
 }
 
 
@@ -307,6 +310,7 @@ input[type=checkbox]:checked:disabled + label:before {
 @media(max-width: 992px){
     .wpo-accountInfo{
         width: 100%;
+        padding: 30px;
     }
     .wpo-accountForm{
         width: 100%;
@@ -323,7 +327,11 @@ input[type=checkbox]:checked:disabled + label:before {
     .wpo-accountForm{
         width: 100%;
     }
+
+    .fromTitle h2 {
+        font-size: 30px;
+    }
 }
 .back-home{
-    max-width: 150px;
+    max-width: 175px;
 }
