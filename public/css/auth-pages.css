@@ -83,7 +83,7 @@ login-design
 }
 .fromTitle h2 {
     font-size: 40px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .fromTitle p {
     font-size: 18px;
@@ -104,9 +104,7 @@ login-design
     border: 1px solid #e5e5e5 !important;
 }
 
-.form-style label {
-    margin-bottom: 5px;
-}
+
 
 
 input[type=checkbox] + label {
@@ -143,8 +141,8 @@ input[type=checkbox] + label:active:before {
 }
 
 input[type=checkbox]:checked + label:before {
-  background-color: #B5A2BD;
-  border-color: #B5A2BD;
+  background-color: #657150;
+  border-color: #657150;
   color: #fff;
 }
 
@@ -169,7 +167,7 @@ input[type=checkbox]:checked:disabled + label:before {
 .forget-btn a{
     display: inline-block;
     font-size: 14px;
-    color: #B5A2BD;
+    color: #657150;
 }
 .input-box label {
     color: #676B79;
@@ -180,9 +178,9 @@ input[type=checkbox]:checked:disabled + label:before {
 .wpo-accountForm .wpo-accountBtn{
     font-size: 16px;
     padding: 10px 20px;
-    border: 2px solid #B5A2BD;
+    border: 2px solid #657150;
     width: 100%;
-    background: #B5A2BD;
+    background: #657150;
     color:#fff;
    transition: all .4s ease-in-out 0s; 
    margin-top: 30px;
@@ -206,7 +204,7 @@ input[type=checkbox]:checked:disabled + label:before {
     background: #fff;
     position: relative;
     top: -14px;
-    color: #B5A2BD;
+    color: #657150;
 }
 .wpo-socialLoginBtn {
     display: flex;
@@ -250,7 +248,7 @@ input[type=checkbox]:checked:disabled + label:before {
 .subText a {
     display: inline-block;
     font-size: 18px;
-    color: #B5A2BD;
+    color: #657150;
 }
 
 

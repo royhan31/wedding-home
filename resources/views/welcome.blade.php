@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="wpOceans">
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="{{ asset('images/favicon.png')}}">
     <title>Sukun - Wedding & Wedding Planner HTML5 Template</title>
     <link href="{{ asset('css/themify-icons.css')}}" rel="stylesheet">
     <link href="{{ asset('css/font-awesome.min.css')}}" rel="stylesheet">
@@ -40,77 +40,43 @@
                     <div class="loader-line-mask">
                         <div class="loader-line"></div>
                     </div>
-                    <img src="{{ asset('images/preloader.png')}}" alt="">
+                    <img src="{{ asset('images/preloader.svg')}}" alt="">
                 </div>
             </div>
         </div>
         <!-- end preloader -->
-        <!-- Start header -->
-      
-        <!-- end of header -->
+       
         <!-- start of invitation -->
-        <section class="wpo-invitation-area section-padding">
+        <section class="wpo-invitation-area section-padding" style="background: url({{ asset('images/slider/invitation-bg.jpg')}}) no-repeat center center;  background-size: cover;">
             <div class="container-fluid">
                 <div class="wpo-invitation-wrap">
                     <div class="wpo-invitation-inner-item">
                         <div class="wpo-invitation-inner">
-                            <div class="hero-text">
-                                <h2 class="wow fadeInUp" data-wow-duration="1200ms">Royhan & Atin</h2>
-                                <div class="wow fadeInUp" data-wow-duration="1400ms">
-                                    <span>We Are Getting Married In</span>
-                                </div>
-                                <p class="wow fadeInUp" data-wow-duration="1600ms">11 . 06 . 2025</p>
-                            </div>
                             <div class="middle-couple-pic wow zoomIn" data-wow-duration="1000ms">
                                 <div class="middle-couple-pic-inner">
-                                    <img src="{{ asset('images/slider/invitation-1.jpg')}}" alt="">
+                                    <img src="{{ asset('images/couple/3.jpg')}}" alt="">
                                 </div>
-                                <div class="shape"><img src="{{ asset('images/slider/left-shape-3.png')}}" alt=""></div>
-                                <div class="shape2"><img src="{{ asset('images/slider/left-shape-4.png')}}" alt=""></div>
+                                <div class="couple-flower">
+                                    <img src="{{ asset('images/couple/couple-flower.png')}}" alt="">
+                                </div>
                             </div>
-                            <div class="wpo-wedding-date">
-                                <div class="wedding-date-wrap">
-                                    <div class="row wow fadeInUp" data-wow-duration="1600ms">
-                                        <div class="col col-xs-12">
-                                            <div class="clock-grids">
-                                                <div id="clock"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="wpo-invitation-info">
+                                <h2 class="wow fadeInUp" data-wow-duration="1000ms">Royhan & Atin</h2>
+                                <p class="wow fadeInUp" data-wow-duration="1200ms">Our Big Day is June 11,2025</p>
                             </div>
                             <div class="wpo-event-text">
                                 <ul>
-                                    <li class="wow fadeInUp" data-wow-duration="1000ms">Monday, 12 Apr. 2024, 2.00 PM –
-                                        11.00 PM</li>
-                                    <li class="wow fadeInUp" data-wow-duration="1200ms">4517 Washington Ave. Manchester,
-                                        Kentucky 39495</li>
-                                    <li class="wow fadeInUp" data-wow-duration="1600ms"> <a class="popup-gmaps"
-                                            href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25211.21212385712!2d144.95275648773628!3d-37.82748510398018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e0!2zTWVsYm91cm5lIFZJQyAzMDA0LCDgpoXgprjgp43gpp_gp43gprDgp4fgprLgpr_gpq_gprzgpr4!5e0!3m2!1sbn!2sbd!4v1503742051881">See
-                                            Location</a></li>
+                                    <li class="wow fadeInUp" data-wow-duration="1600ms"> <a class="popup-gmaps" href="/home">Buka Undangan</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="left-shape">
-                <div class="shape s1"><img src="{{ asset('images/slider/ishape-1.svg')}}" alt=""></div>
-                <div class="shape s2"><img src="{{ asset('images/slider/ishape-2.svg')}}" alt=""></div>
-                <div class="shape s3"><img src="{{ asset('images/slider/ishape-3.svg')}}" alt=""></div>
-                <div class="shape s4"><img src="{{ asset('images/slider/ishape-4.svg')}}" alt=""></div>
-                <div class="shape s5"><img src="{{ asset('images/slider/ishape-5.svg')}}" alt=""></div>
-            </div>
-            <div class="right-shape">
-                <div class="shape s1"><img src="{{ asset('images/slider/ishape-5.svg')}}" alt=""></div>
-                <div class="shape s2"><img src="{{ asset('images/slider/ishape-4.svg')}}" alt=""></div>
-                <div class="shape s3"><img src="{{ asset('images/slider/ishape-3.svg')}}" alt=""></div>
-                <div class="shape s4"><img src="{{ asset('images/slider/ishape-2.svg')}}" alt=""></div>
-                <div class="shape s5"><img src="{{ asset('images/slider/ishape-1.svg')}}" alt=""></div>
-            </div>
         </section>
         <!-- end of invitation slider -->
 
+        <!-- end of wpo-site-footer-section -->
     </div>
     <!-- end of page-wrapper -->
 
@@ -121,7 +87,8 @@
     <!-- Plugins for this template -->
     <script src="{{ asset('js/modernizr.custom.js')}}"></script>
     <script src="{{ asset('js/jquery-plugin-collection.js')}}"></script>
-    <script src="{{ asset('js/gsap-active.js')}}"></script>
+    <script src="{{ asset('js/moving-animation.js')}}"></script>
+    <script src="{{ asset('js/tilt.jquery.min.js')}}"></script>
     <!-- Custom script for this template -->
     <script src="{{ asset('js/script.js')}}"></script>
 </body>
