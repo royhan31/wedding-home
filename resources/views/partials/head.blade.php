@@ -4,7 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="wpOceans" />
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
-    <title>Royhan & Atin</title>
+    <title>
+        @yield("title")
+    </title>
     <link href="{{ asset('css/themify-icons.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/flaticon.css') }}" rel="stylesheet" />
@@ -20,5 +22,5 @@
     <link href="{{ asset('css/owl.transitions.css')}}" rel="stylesheet" />
     <link href="{{ asset('css/jquery.fancybox.css')}}" rel="stylesheet" />
     <link href="{{ asset('css/odometer-theme-default.css')}}" rel="stylesheet" />
-    <link href="{{ asset('css/style.css')}}" rel="stylesheet" />
+    <link href="{{ asset('sass/style.css')}}" rel="stylesheet" />
 </head>

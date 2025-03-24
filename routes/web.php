@@ -19,3 +19,6 @@ use App\Http\Controllers\InvitationController as Invitation;
 // });
 
 Route::get('/', [Invitation::class, 'index'])->name('invitation');
+Route::get('/home', function () {
+    return view('home/index');
+})->name('home');

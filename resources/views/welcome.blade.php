@@ -2,32 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="wpOceans">
-    <link rel="shortcut icon" type="image/png" href="{{ asset('images/favicon.png')}}">
-    <title>Sukun - Wedding & Wedding Planner HTML5 Template</title>
-    <link href="{{ asset('css/themify-icons.css')}}" rel="stylesheet">
-    <link href="{{ asset('css/font-awesome.min.css')}}" rel="stylesheet">
-    <link href="{{ asset('css/flaticon.css')}}" rel="stylesheet">
-    <link href="{{ asset('css/bootstrap.min.css')}}" rel="stylesheet">
-    <link href="{{ asset('css/animate.css')}}" rel="stylesheet">
-    <link href="{{ asset('css/owl.carousel.css')}}" rel="stylesheet">
-    <link href="{{ asset('css/owl.theme.css')}}" rel="stylesheet">
-    <link href="{{ asset('css/slick.css')}}" rel="stylesheet">
-    <link href="{{ asset('css/slick-theme.css')}}" rel="stylesheet">
-    <link href="{{ asset('css/swiper.min.css')}}" rel="stylesheet">
-    <link href="{{ asset('css/nice-select.css')}}" rel="stylesheet">
-    <link href="{{ asset('css/owl.transitions.css')}}" rel="stylesheet">
-    <link href="{{ asset('css/magnific-popup.css')}}" rel="stylesheet">
-    <link href="{{ asset('css/jquery.fancybox.css')}}" rel="stylesheet">
-    <link href="{{ asset('css/odometer-theme-default.css')}}" rel="stylesheet">
-    <link href="{{ asset('css/jquery-ui.css')}}" rel="stylesheet">
-    <link href="{{ asset('sass/style.css')}}" rel="stylesheet">
-</head>
-
+@include('partials.head')
 <body>
 
     <!-- start page-wrapper -->
@@ -66,7 +41,7 @@
                             </div>
                             <div class="wpo-event-text">
                                 <ul>
-                                    <li class="wow fadeInUp" data-wow-duration="1600ms"> <a class="popup-gmaps" href="/home">Buka Undangan</a></li>
+                                    <li class="wow fadeInUp" data-wow-duration="1600ms"> <a class="" href="/home">Buka Undangan</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -80,17 +55,7 @@
     </div>
     <!-- end of page-wrapper -->
 
-    <!-- All JavaScript files
-    ================================================== -->
-    <script src="{{ asset('js/jquery.min.js')}}"></script>
-    <script src="{{ asset('js/bootstrap.bundle.min.js')}}"></script>
-    <!-- Plugins for this template -->
-    <script src="{{ asset('js/modernizr.custom.js')}}"></script>
-    <script src="{{ asset('js/jquery-plugin-collection.js')}}"></script>
-    <script src="{{ asset('js/moving-animation.js')}}"></script>
-    <script src="{{ asset('js/tilt.jquery.min.js')}}"></script>
-    <!-- Custom script for this template -->
-    <script src="{{ asset('js/script.js')}}"></script>
+   @include('partials.script')
 </body>
 
 </html>
