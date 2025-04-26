@@ -29,15 +29,15 @@
                         <div class="wpo-invitation-inner">
                             <div class="middle-couple-pic wow zoomIn" data-wow-duration="1000ms">
                                 <div class="middle-couple-pic-inner">
-                                    <img src="{{ asset('images/couple/3.jpg')}}" alt="">
+                                    <img src="{{$data->invitation_image}}" alt="">
                                 </div>
                                 <div class="couple-flower">
                                     <img src="{{ asset('images/couple/couple-flower.png')}}" alt="">
                                 </div>
                             </div>
                             <div class="wpo-invitation-info">
-                                <h2 class="wow fadeInUp" data-wow-duration="1000ms">Royhan & Atin</h2>
-                                <p class="wow fadeInUp" data-wow-duration="1200ms">Our Big Day is June 11,2025</p>
+                                <h2 class="wow fadeInUp" data-wow-duration="1000ms"> {{$male ? $male->name : ""}} & {{$female ? $female->name : ""}}</h2>
+                                <p class="wow fadeInUp" data-wow-duration="1200ms">{{ $data ? $data->wedding_date : ""}}</p>
                             </div>
                             <div class="wpo-event-text">
                                 <ul>

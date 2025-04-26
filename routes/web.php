@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\InvitationController as Invitation;
+use App\Http\Controllers\ApplicationController as Application;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +18,6 @@ use App\Http\Controllers\InvitationController as Invitation;
 //     return view('welcome');
 // });
 
-Route::get('/', [Invitation::class, 'index'])->name('invitation');
-Route::get('/home', function () {
-    return view('home/index');
-})->name('home');
+Route::get('/', [Application::class, 'index'])->name('invitation');
+Route::get('/home', [Application::class, 'home'])->name('home');
+

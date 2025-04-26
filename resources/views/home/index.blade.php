@@ -72,11 +72,11 @@
                         <div class="row align-items-center">
                             <div class="col col-xl-7 col-lg-7 col-md-12 col-12">
                                 <div class="hero-text">
-                                    <h2 class="wow fadeInUp" data-wow-duration="1200ms">Esabella & William</h2>
+                                    <h2 class="wow fadeInUp" data-wow-duration="1200ms"> {{$male ? $male->name : ""}} & {{$female ? $female->name : ""}}</h2>
                                     <div class="wow fadeInUp" data-wow-duration="1400ms">
                                         <span>We Are Getting Married In</span>
                                     </div>
-                                    <p class="wow fadeInUp" data-wow-duration="1600ms">12 . 12 . 2024</p>
+                                    <p class="wow fadeInUp" data-wow-duration="1600ms">{{ $data ? $data->wedding_date->isoFormat('dddd, D MMMM Y') : ""}}</p>
                                     <!-- start wpo-wedding-date -->
                                     <div class="wpo-wedding-date wow fadeInUp" data-wow-duration="1200ms">
                                         <div class="wedding-date-wrap">
@@ -123,11 +123,11 @@
                             <div class="col col-md-6 col-12">
                                 <div class="couple-item">
                                     <div class="couple-img">
-                                        <img src="assets/images/couple/couple-img-1.jpg" alt="">
+                                        <img src="{{$male ? $male->image : ""}}" alt="">
                                     </div>
                                     <div class="couple-text">
-                                        <i><img src="assets/images/couple/bride.svg" alt=""></i>
-                                        <h3>Esabella Bell</h3>
+                                        <i><img src="assets/images/couple/groom.svg" alt=""></i>
+                                        <h3>{{$male ? $male->full_name : ""}}</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna orci auctor
                                             vitae nisl. fringilla pellesque amet tempus.</p>
                                         <div class="social">
@@ -150,11 +150,11 @@
                             <div class="col col-md-6 col-12">
                                 <div class="couple-item">
                                     <div class="couple-img">
-                                        <img src="assets/images/couple/couple-img-2.jpg" alt="">
+                                        <img src="{{$female ? $female->image : ""}}" alt="">
                                     </div>
                                     <div class="couple-text">
-                                        <i><img src="assets/images/couple/groom.svg" alt=""></i>
-                                        <h3>William Max</h3>
+                                        <i><img src="assets/images/couple/bride.svg" alt=""></i>
+                                        <h3>{{$female ? $female->full_name : ""}}</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna orci auctor
                                             vitae nisl. fringilla pellesque amet tempus.</p>
                                         <div class="social">
@@ -680,6 +680,19 @@
     <script src="{{ asset('assets/js/gsap-active.js')}}"></script>
     <!-- Custom script for this template -->
     <script src="{{ asset('assets/js/script.js')}}"></script>
+
+    <script>
+         if ($("#clock").length) {
+            $('#clock').countdown('{{$data ? $data->wedding_date : ""}}', function (event) {
+                var $this = $(this).html(event.strftime(''
+                    // + '<div class="box"><div><div class="time">%m</div> <span>Month</span> </div></div>'
+                    + '<div class="box"><div><div class="time">%D</div> <span>Days</span> </div></div>'
+                    + '<div class="box"><div><div class="time">%H</div> <span>Hours</span> </div></div>'
+                    + '<div class="box"><div><div class="time">%M</div> <span>Mins</span> </div></div>'
+                    + '<div class="box"><div><div class="time">%S</div> <span>Secs</span> </div></div>'));
+            });
+        }
+    </script>
 </body>
 
 </html>
