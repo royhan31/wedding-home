@@ -8,7 +8,7 @@
 <body>
 
     <!-- start page-wrapper -->
-    <div class="page-wrap">
+    <div class="page-wrap scrollspy-example" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" tabindex="0">
         <!-- start preloader -->
         <div class="preloader">
             <div class="vertical-centered-box">
@@ -65,7 +65,7 @@
                 </div>
             </div>
         </section> --}}
-        <section class="static-hero-s6">
+        <section class="static-hero-s6" id="home">
             <div class="static-main-box">
                 <div class="container-fluid">
                     <div class="static-inner-box">
@@ -115,7 +115,7 @@
         </section>
         <!-- end wpo-wedding-date-s3-->
         <!-- start couple-section -->
-        <section class="wpo-couple-section section-padding pt-2" id="couple">
+        <section class="wpo-couple-section section-padding pt-2" id="candidate">
             <div class="container">
                 <div class="couple-area clearfix">
                     <div class="couple-wrap">
@@ -650,105 +650,16 @@
         </section>
         <!-- end wpo-blog-section -->
         <!-- start wpo-partners-section -->
-        <section class="wpo-partners-section section-padding">
-            <h2 class="hidden">Partners</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col col-xs-12">
-                        <div class="partner-grids partners-slider owl-carousel">
-                            <div class="grid">
-                                <img src="assets/images/partners/1.png" alt>
-                            </div>
-                            <div class="grid">
-                                <img src="assets/images/partners/2.png" alt>
-                            </div>
-                            <div class="grid">
-                                <img src="assets/images/partners/3.png" alt>
-                            </div>
-                            <div class="grid">
-                                <img src="assets/images/partners/4.png" alt>
-                            </div>
-                            <div class="grid">
-                                <img src="assets/images/partners/5.png" alt>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- end container -->
-        </section>
+       
         <!-- end wpo-partners-section-->
         <!-- start of wpo-site-footer-section -->
         <footer class="wpo-site-footer">
-            <div class="wpo-upper-footer">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col col-xl-3  col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div class="widget link-widget">
-                                <div class="widget-title">
-                                    <h3>Links</h3>
-                                </div>
-                                <div class="link-wrap">
-                                    <ul>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="service.html">Services</a></li>
-                                        <li><a href="rsvp.html">RSVP</a></li>
-                                    </ul>
-                                    <ul>
-                                        <li><a href="gallery.html">Gallery</a></li>
-                                        <li><a href="index.html">Get Quote</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-xl-6 col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div class="widget about-widget">
-                                <div class="logo widget-title">
-                                    <a class="logo" href="index.html"><img src="assets/images/logo-2.svg" alt=""></a>
-                                </div>
-                                <p>We can’t wait to see all of our beloved friends
-                                    and relative s at our wedding.</p>
-                                <ul>
-                                    <li>
-                                        <a href="#">
-                                            <i class="ti-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="ti-twitter-alt"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="ti-instagram"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col col-xl-3  col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div class="widget wpo-service-link-widget">
-                                <div class="widget-title">
-                                    <h3>Contact </h3>
-                                </div>
-                                <div class="contact-ft">
-                                    <p>sukun@gmail.com</p>
-                                    <p>4517 Washington Ave. Manchester, 
-                                        Kentucky 39495</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- end container -->
-            </div>
-            <div class="wpo-lower-footer">
+           
+            <div class="wpo-lower-footer mb-5">
                 <div class="container">
                     <div class="row">
                         <div class="col col-xs-12">
-                            <p class="copyright"> &copy; Copyright 2024 | <a href="index.html">Sukun</a> | All right
-                                reserved.</p>
+                            <p class="copyright"> &copy; Copyright 2025 </p>
                         </div>
                     </div>
                 </div>
