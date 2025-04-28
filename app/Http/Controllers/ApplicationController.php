@@ -6,17 +6,21 @@ use Illuminate\Http\Request;
 use App\Models\Application;
 use App\Models\MaleCandidate;
 use App\Models\FemaleCandidate;
+use App\Models\Schedule;
 use Carbon\Carbon;
 
 class ApplicationController extends Controller
 {
     public function index() {
         $data = Application::first();
-        $weddingDate = Carbon::parse($data->wedding_date)->isoFormat('dddd, D MMMM Y');
+        if($data){
+            $weddingDate = Carbon::parse($data->wedding_date);
+            $data->wedding_date = $weddingDate;
+        }
         $male = MaleCandidate::first();
         $female = FemaleCandidate::first();
 
-        $data->wedding_date = $weddingDate;
+        
         return view("welcome", [
             "data" => $data,
             "male" => $male,
@@ -26,15 +30,19 @@ class ApplicationController extends Controller
 
     public function home() {
         $data = Application::first();
-        $weddingDate = Carbon::parse($data->wedding_date);
+        if($data){
+            $weddingDate = Carbon::parse($data->wedding_date);
+            $data->wedding_date = $weddingDate;
+        }
         $male = MaleCandidate::first();
         $female = FemaleCandidate::first();
+        $schedule = Schedule::orderBy("position", "ASC")->get();
 
-        $data->wedding_date = $weddingDate;
         return view("home.index", [
             "data" => $data,
             "male" => $male,
-            "female" => $female
+            "female" => $female,
+            "schedule" => $schedule
         ]);
     }
 }

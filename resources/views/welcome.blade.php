@@ -29,7 +29,7 @@
                         <div class="wpo-invitation-inner">
                             <div class="middle-couple-pic wow zoomIn" data-wow-duration="1000ms">
                                 <div class="middle-couple-pic-inner">
-                                    <img src="{{$data->invitation_image}}" alt="">
+                                    <img src="{{ $data ? $data->invitation_image : ""}}" alt="">
                                 </div>
                                 <div class="couple-flower">
                                     <img src="{{ asset('images/couple/couple-flower.png')}}" alt="">
@@ -37,7 +37,7 @@
                             </div>
                             <div class="wpo-invitation-info">
                                 <h2 class="wow fadeInUp" data-wow-duration="1000ms"> {{$male ? $male->name : ""}} & {{$female ? $female->name : ""}}</h2>
-                                <p class="wow fadeInUp" data-wow-duration="1200ms">{{ $data ? $data->wedding_date : ""}}</p>
+                                <p class="wow fadeInUp" data-wow-duration="1200ms">{{ $data ? $data->wedding_date->isoFormat('dddd, D MMMM Y') : ""}}</p>
                             </div>
                             <div class="wpo-event-text">
                                 <ul>

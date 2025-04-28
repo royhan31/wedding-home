@@ -129,14 +129,14 @@ Version:        1.0.0
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 @font-face {
   font-family: 'monallesia';
-  src: url("../fonts/monallesiascript.woff2") format("woff2"), url("../fonts/monallesiascript.woff") format("woff");
+  src: url("/assets/fonts/monallesiascript.woff2") format("woff2"), url("/assets/fonts/monallesiascript.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'monallesia';
-  src: url("../fonts/monallesiascript.woff2") format("woff2"), url("../fonts/monallesiascript.woff") format("woff");
+  src: url("/assets/fonts/monallesiascript.woff2") format("woff2"), url("/assets/fonts/monallesiascript.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -902,7 +902,7 @@ a.ui-button:active, .ui-button:active,
 
 .form select {
   font-style: normal;
-  background: url(../images/select-icon.png) no-repeat right center;
+  background: url(/images/select-icon.png) no-repeat right center;
   display: inline-block;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -960,7 +960,7 @@ a.ui-button:active, .ui-button:active,
 }
 
 .wpo-page-title {
-  background: url(../images/page-title.jpg) no-repeat center top/cover;
+  background: url(/images/page-title.jpg) no-repeat center top/cover;
   min-height: 360px;
   position: relative;
   display: -webkit-box;
@@ -1166,7 +1166,7 @@ a.ui-button:active, .ui-button:active,
 }
 
 .preloader {
-  background-color: #939580;
+  background-color: #abbbd4;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -1708,7 +1708,7 @@ a.ui-button:active, .ui-button:active,
 
 .blog-sidebar .wpo-contact-widget {
   border: 0;
-  background: url(../images/bg-2.jpg) no-repeat center center;
+  background: url(/images/bg-2.jpg) no-repeat center center;
   position: relative;
   background-size: cover;
   z-index: 1;
@@ -1742,7 +1742,7 @@ a.ui-button:active, .ui-button:active,
 
 .blog-sidebar .wpo-contact-widget h2::before {
   left: 28px;
-  background: url(../images/Single-title-shape2.png) no-repeat right center;
+  background: url(/images/Single-title-shape2.png) no-repeat right center;
 }
 
 .blog-sidebar .wpo-contact-widget p {
@@ -4845,7 +4845,7 @@ a.ui-button:active, .ui-button:active,
   font-weight: 800;
   line-height: normal;
   font-family: "Mulish", sans-serif;
-  background: url("../images/slider/text-bg.jpg") top;
+  background: url("/images/slider/text-bg.jpg") top;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: cover;
@@ -5510,7 +5510,7 @@ a.ui-button:active, .ui-button:active,
 }
 
 .static-hero-s6 .hero-text .wpo-wedding-date .wedding-date-wrap #clock .box:before {
-  background: url(../images/wedding-date/7.svg) no-repeat center center;
+  background: url(/images/wedding-date/7.svg) no-repeat center center;
   left: auto;
   right: -50px;
   bottom: -65px;
@@ -5523,7 +5523,7 @@ a.ui-button:active, .ui-button:active,
 }
 
 .static-hero-s6 .hero-text .wpo-wedding-date .wedding-date-wrap #clock .box:nth-child(even):before {
-  background: url(../images/wedding-date/8.svg) no-repeat center center;
+  background: url(/images/wedding-date/8.svg) no-repeat center center;
   left: auto;
   right: -65px;
 }
@@ -6290,7 +6290,7 @@ a.ui-button:active, .ui-button:active,
 .wpo-site-footer-s3,
 .wpo-site-footer-s4,
 .wpo-site-footer-s5 {
-  background: #A290AA;
+  background: #abbbd4;
   position: relative;
   font-size: 15px;
   overflow: hidden;
@@ -6753,7 +6753,7 @@ a.ui-button:active, .ui-button:active,
 .wpo-site-footer-s5 .wpo-lower-footer {
   text-align: center;
   position: relative;
-  background: #A290AA;
+  background: #abbbd4;
   z-index: -1;
   border-top: 1px solid #B4A1BC;
 }
@@ -6980,7 +6980,7 @@ a.ui-button:active, .ui-button:active,
   width: 130px;
   height: 190px;
   content: "";
-  background: url(../images/wedding-date/1.svg) no-repeat center center;
+  background: url(/images/wedding-date/1.svg) no-repeat center center;
   z-index: 1;
 }
 
@@ -6991,7 +6991,7 @@ a.ui-button:active, .ui-button:active,
   width: 170px;
   left: -50px;
   top: -50px;
-  background: url(../images/wedding-date/2.svg) no-repeat center center;
+  background: url(/images/wedding-date/2.svg) no-repeat center center;
 }
 
 .wpo-wedding-date .wedding-date-wrap #clock > div,
@@ -9036,7 +9036,7 @@ a.ui-button:active, .ui-button:active,
 
 .wpo-event-section .wpo-event-wrap {
   border-radius: 355px 355px 0px 0px;
-  border: 30px solid #EFE6EE;
+  border: 30px solid #abbbd4;
   max-width: 710px;
   margin: 0 auto;
   padding: 150px 100px;
@@ -9064,7 +9064,7 @@ a.ui-button:active, .ui-button:active,
 
 @media (max-width: 575px) {
   .wpo-event-section .wpo-event-wrap {
-    border: 10px solid #EFE6EE;
+    border: 10px solid #abbbd4;
   }
 }
 
@@ -9133,7 +9133,7 @@ a.ui-button:active, .ui-button:active,
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  color: #939580;
+  color: #db9d9f;
   z-index: 11;
 }
 
@@ -9150,7 +9150,7 @@ a.ui-button:active, .ui-button:active,
 }
 
 .wpo-event-section .wpo-event-wrap .wpo-event-item h4 {
-  font-size: 25px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -9620,7 +9620,7 @@ a.ui-button:active, .ui-button:active,
 }
 
 .wpo-couple-section-s2 .couple-area .couple-wrap .couple-item .couple-text .couple-text-inner {
-  background: #939580;
+  background: #abbbd4;
   padding: 50px 30px 40px;
   text-align: center;
   border-radius: 180px 180px 0px 0px;
@@ -10573,14 +10573,14 @@ a.ui-button:active, .ui-button:active,
   bottom: -50px;
   width: 190px;
   height: 240px;
-  background: url(../images/wedding-date/3.svg) no-repeat center center;
+  background: url(/images/wedding-date/3.svg) no-repeat center center;
 }
 
 .wpo-wedding-date-s2 .wedding-date-wrap #clock .box:nth-child(even):before {
   width: 170px;
   left: -50px;
   top: -50px;
-  background: url(../images/wedding-date/4.svg) no-repeat center center;
+  background: url(/images/wedding-date/4.svg) no-repeat center center;
 }
 
 .wpo-wedding-date-s2 .wedding-date-wrap #clock .box .time {
@@ -12815,14 +12815,14 @@ a.ui-button:active, .ui-button:active,
 .wpo-wedding-date-s4 .wedding-date-wrap #clock .box:before {
   bottom: auto;
   top: -50px;
-  background: url(../images/wedding-date/5.svg) no-repeat center center;
+  background: url(/images/wedding-date/5.svg) no-repeat center center;
 }
 
 .wpo-wedding-date-s4 .wedding-date-wrap #clock .box:nth-child(even):before {
   top: auto;
   left: -70px;
   bottom: -50px;
-  background: url(../images/wedding-date/6.svg) no-repeat center center;
+  background: url(/images/wedding-date/6.svg) no-repeat center center;
 }
 
 .wpo-wedding-date-s4 .wedding-date-wrap #clock .time {
@@ -15013,7 +15013,7 @@ a.ui-button:active, .ui-button:active,
 }
 
 .wpo-contact-section-s8 .wpo-contact-section-wrapper .wpo-contact-form-area select.form-control {
-  background: rgba(255, 255, 255, 0.69) url(../images/select-icon2.png) no-repeat calc(100% - 15px) center;
+  background: rgba(255, 255, 255, 0.69) url(/images/select-icon2.png) no-repeat calc(100% - 15px) center;
   color: #707070;
 }
 
@@ -15028,7 +15028,7 @@ a.ui-button:active, .ui-button:active,
 }
 
 .wpo-contact-section-s8 .wpo-contact-section-wrapper .wpo-contact-form-area .date .form-control {
-  background: rgba(255, 255, 255, 0.69) url(../images/date2.png) no-repeat calc(100% - 15px) center;
+  background: rgba(255, 255, 255, 0.69) url(/images/date2.png) no-repeat calc(100% - 15px) center;
 }
 
 .wpo-contact-section-s8 .wpo-contact-section-wrapper .wpo-contact-form-area .submit-area {
@@ -15826,7 +15826,7 @@ a.ui-button:active, .ui-button:active,
 }
 
 .wpo-invitation-area .wpo-invitation-wrap .wedding-date-wrap #clock .box:before {
-  background: url(../images/wedding-date/7.svg) no-repeat center center;
+  background: url(/images/wedding-date/7.svg) no-repeat center center;
   left: auto;
   right: -50px;
   bottom: -65px;
@@ -15839,7 +15839,7 @@ a.ui-button:active, .ui-button:active,
 }
 
 .wpo-invitation-area .wpo-invitation-wrap .wedding-date-wrap #clock .box:nth-child(even):before {
-  background: url(../images/wedding-date/8.svg) no-repeat center center;
+  background: url(/images/wedding-date/8.svg) no-repeat center center;
   left: auto;
   right: -65px;
 }
@@ -15987,7 +15987,7 @@ a.ui-button:active, .ui-button:active,
   max-width: 600px;
   margin-left: auto;
   position: relative;
-  background: url(../images/slider/invite-bg.png);
+  background: url(/images/slider/invite-bg.png);
   overflow: hidden;
   padding: 15px;
   z-index: 1;
@@ -16482,7 +16482,7 @@ a.ui-button:active, .ui-button:active,
 
 /*15.2 wpo-offer-banner-section*/
 .wpo-offer-banner-section {
-  background: url(../images/offer.jpg) no-repeat center center;
+  background: url(/images/offer.jpg) no-repeat center center;
   height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17811,7 +17811,7 @@ a.ui-button:active, .ui-button:active,
   backdrop-filter: blur(12px);
   position: relative;
   margin: 0;
-  background: url(../images/slider/invite-bg.png);
+  background: url(/images/slider/invite-bg.png);
 }
 
 @media (max-width: 575px) {
@@ -19263,7 +19263,7 @@ a.ui-button:active, .ui-button:active,
   -o-appearance: none;
   appearance: none;
   -moz-appearance: none;
-  background: transparent url(../images/select-icon2.png) no-repeat calc(100% - 15px) center;
+  background: transparent url(/images/select-icon2.png) no-repeat calc(100% - 15px) center;
   position: relative;
 }
 
@@ -20012,7 +20012,7 @@ a.ui-button:active, .ui-button:active,
 
 .service-sidebar .wpo-contact-widget {
   border: 0;
-  background: url(../images/bg-2.jpg) no-repeat center center;
+  background: url(/images/bg-2.jpg) no-repeat center center;
   position: relative;
   background-size: cover;
   z-index: 1;
@@ -21491,12 +21491,12 @@ a.ui-button:active, .ui-button:active,
   -o-appearance: none;
   appearance: none;
   -moz-appearance: none;
-  background: transparent url(../images/select-icon2.png) no-repeat calc(100% - 15px) center;
+  background: transparent url(/images/select-icon2.png) no-repeat calc(100% - 15px) center;
   position: relative;
 }
 
 .wpo-contact-pg-section form select:focus {
-  background: transparent url(../images/select-icon2.png) no-repeat calc(100% - 15px) center;
+  background: transparent url(/images/select-icon2.png) no-repeat calc(100% - 15px) center;
 }
 
 .wpo-contact-pg-section form .submit-area {
