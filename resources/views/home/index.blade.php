@@ -50,9 +50,14 @@
         @include("home.partials.audience")
         <!-- end of wpo-contact-section -->
 
+        <!-- start of wpo-contact-section -->
+        @include("home.partials.comment")
+        <!-- end of wpo-contact-section -->
+
         <!-- start of wpo-site-footer-section -->
         @include("home.partials.footer")
         <!-- end of wpo-site-footer-section -->
+        <audio id="my_audio" src="{{$data ? $data->music : ""}}" loop="loop"></audio>
     </div>
     <!-- end of page-wrapper -->
 
@@ -79,16 +84,28 @@
         }
 
         $(document).ready(function() {
-            // $("#my_audio").get(0).play();
+            @if ($data)
+                @if (!$data->mute)
+                    $("#my_audio").get(0).play();
+                @endif
+            @endif
         });
 
         function saveToCalendar() {
-            var event = "";
-            var month = '04';
-            var date = '27';
-            var th  = '2025';
+            var event = "The Wedding Of "+ '{{$male ? $male->name : ""}}' +" & " + '{{ $female ? $female->name : ""}}';
+            var month = '{{$data ? $data->wedding_date->format('m') : ""}}'
+            var date = '{{$data ? $data->wedding_date->format('d') : ""}}'
+            var th  = '{{$data ? $data->wedding_date->format('Y') : ""}}'
             var link = 'https://calendar.google.com/calendar/u/0/r/eventedit?text='+event+'&dates='+th+month+date+'T080000/'+th+month+date+'T090000';
             window.open(link, '_blank');
+        }
+
+        function copyToClipboard(e, text){
+            navigator.clipboard.writeText(text);
+            $(e).text("Copied")
+            setTimeout(function() { 
+                $(e).text("Copy")
+            }, 2000);
         }
     </script>
 </body>

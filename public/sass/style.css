@@ -268,7 +268,7 @@ img {
 
 @media (max-width: 575px) {
   .section-padding {
-    padding: 110px 0;
+    padding: 25px 0;
   }
 }
 
@@ -16997,13 +16997,13 @@ a.ui-button:active, .ui-button:active,
 
 @media (max-width: 1199px) {
   .wpo-invitation-area .wpo-invitation-wrap .wpo-invitation-inner {
-    padding: 80px 0;
+    padding: 30px 0;
   }
 }
 
 @media (max-width: 991px) {
   .wpo-invitation-area .wpo-invitation-wrap .wpo-invitation-inner {
-    padding: 60px 0;
+    padding: 30px 0;
   }
 }
 
@@ -22835,12 +22835,12 @@ a.ui-button:active, .ui-button:active,
 
 .wpo-blog-single-section .comments-area li > div {
   border-bottom: 1px solid #e4effb;
-  padding: 35px;
+  padding: 5px;
 }
 
 @media (max-width: 991px) {
   .wpo-blog-single-section .comments-area li > div {
-    padding: 35px 25px;
+    padding: 5px 25px;
   }
 }
 
@@ -22895,13 +22895,13 @@ a.ui-button:active, .ui-button:active,
 }
 
 .wpo-blog-single-section .comments-area .comment-main-area {
-  padding-left: 100px;
+  padding-left: 5px;
 }
 
 @media (max-width: 767px) {
   .wpo-blog-single-section .comments-area .comment-main-area {
     padding-left: 0;
-    margin-top: 25px;
+    margin-top: 5px;
   }
 }
 
@@ -23228,12 +23228,12 @@ a.ui-button:active, .ui-button:active,
 }
 
 .wpo-contact-pg-section .office-info {
-  padding-bottom: 100px;
+  padding-bottom: 0px;
 }
 
 @media (max-width: 767px) {
   .wpo-contact-pg-section .office-info {
-    padding-bottom: 60px;
+    padding-bottom: 0px;
   }
 }
 

@@ -119,3 +119,7 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 .flaticon-next:before {
     content: "\f122";
 }
+.flaticon-banking-credit-card:before { 
+    content: "\f11b"; 
+}
+

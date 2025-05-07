@@ -17,6 +17,7 @@
                                         <div id="clock"></div>
                                     </div>
                                 </div>
+                                <button class="btn mt-5 text-white" style="background: #abbbd4" onclick="saveToCalendar()">Save to Calendar</button>
                             </div>
                         </div>
                     </div>

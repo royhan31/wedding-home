@@ -1,38 +1,40 @@
 <section class="wpo-contact-pg-section section-padding">
     <div class="container">
         <div class="row">
-            <div class="col col-lg-10 offset-lg-1">
+            <div class="col col-lg-12 offset-lg-1">
                 <div class="wpo-contact-title">
-                    <h2>Have Any Question?</h2>
-                    <p>It is a long established fact that a reader will be distracted
-                        content of a page when looking.</p>
+                    <h2>Titip Hadiah</h2>
+                    <p>Doa restu Bapak/Ibu sekalian merupakan karunia yang sangat berarti bagi kami. Dan jika memberi merupakan ungkapan tanda kasih, Bapak/Ibu dapat memberi kado secara cashless. Terima kasih</p>
                 </div>
                 <div class="office-info">
                     <div class="row">
-                        <div class="col col-xl-4 col-lg-6 col-md-6 col-12">
+                        <div class="col col-xl-6 col-lg-6 col-md-6 col-12">
                             <div class="office-info-item">
                                 <div class="office-info-icon">
                                     <div class="icon">
-                                        <i class="fi flaticon-maps-and-flags"></i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
                                     </div>
                                 </div>
-                                <div class="office-info-text">
-                                    <h2>Address</h2>
-                                    <p>7 Green Lake Street Crawfordsville, IN 47933</p>
+                                <div class="office-info-text mb-4">
+                                    <h2>{{$male ? $male->bank_name : ""}}</h2>
+                                    <p>{{$male ? $male->bank_number : ""}}</p>
+                                    <p>{{$male ? $male->full_name : ""}}</p>
+                                    <button class="btn pull-right text-white" style="background: #abbbd4" onclick="copyToClipboard(this,'test')">Copy</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-xl-4 col-lg-6 col-md-6 col-12">
+                        <div class="col col-xl-6 col-lg-6 col-md-6 col-12">
                             <div class="office-info-item">
                                 <div class="office-info-icon">
                                     <div class="icon">
-                                        <i class="fi flaticon-email"></i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
                                     </div>
                                 </div>
-                                <div class="office-info-text">
-                                    <h2>Email Us</h2>
-                                    <p>Sukun@gmail.com</p>
-                                    <p>helloyou@gmail.com</p>
+                                <div class="office-info-text mb-4">
+                                    <h2>{{$female ? $female->bank_name : ""}}</h2>
+                                    <p>{{$female ? $female->bank_number : ""}}</p>
+                                    <p>{{$female ? $female->full_name : ""}}</p>
+                                    <button class="btn pull-right text-white" style="background: #abbbd4" onclick="copyToClipboard(this,'test')">Copy</button>
                                 </div>
                             </div>
                         </div>

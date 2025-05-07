@@ -41,6 +41,10 @@
                             </div>
                             <div class="wpo-event-text">
                                 <ul>
+                                    <div class="mb-3">
+                                        <h4>Kepada : </h4>
+                                        <h4>{{ Request::has('audience') && Request::get('audience') != "" ? Request::get('audience') : "Tamu Undangan" }}</h4>
+                                    </div>
                                     <li class="wow fadeInUp" data-wow-duration="1600ms"> <a class="" href="/home">Buka Undangan</a></li>
                                 </ul>
                             </div>
@@ -56,6 +60,7 @@
     <!-- end of page-wrapper -->
 
    @include('partials.script')
+
 </body>
 
 </html>
