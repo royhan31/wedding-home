@@ -1,7 +1,7 @@
 <section class="wpo-contact-pg-section section-padding">
     <div class="container">
         <div class="row">
-            <div class="col col-lg-12 offset-lg-1">
+            <div class="col col-lg-12">
                 <div class="wpo-contact-title">
                     <h2>Titip Hadiah</h2>
                     <p>Doa restu Bapak/Ibu sekalian merupakan karunia yang sangat berarti bagi kami. Dan jika memberi merupakan ungkapan tanda kasih, Bapak/Ibu dapat memberi kado secara cashless. Terima kasih</p>

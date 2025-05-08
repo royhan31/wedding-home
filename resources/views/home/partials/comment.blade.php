@@ -1,7 +1,7 @@
 <section class="wpo-blog-single-section section-padding">
     <div class="container">
         <div class="row">
-            <div class="col col-lg-8 col-12">
+            <div class="col col-lg-12 col-12">
                 <div class="wpo-blog-content">
                     <div class="comments-area">
                         <div class="comments-section">
