@@ -29,7 +29,7 @@
                     <div class="col col-lg-5 col-12">
                         <div class="couple-item">
                             <div class="couple-img">
-                                <img src="{{$female ? $female->full_name : ""}}" alt="">
+                                <img src="{{$female ? $female->image : ""}}" alt="">
                             </div>
                             <div class="couple-text">
                                 <div class="couple-text-inner">
