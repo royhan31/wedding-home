@@ -29,7 +29,7 @@
                         <div class="wpo-invitation-inner">
                             <div class="middle-couple-pic wow zoomIn" data-wow-duration="1000ms">
                                 <div class="middle-couple-pic-inner">
-                                    <img src="{{ $data ? $data->invitation_image : ""}}" alt="">
+                                    <img src="{{ $data ? $data->invitation_image : ""}}" alt="" width="480px" height="480px">
                                 </div>
                                 <div class="couple-flower">
                                     <img src="{{ asset('images/couple/couple-flower.png')}}" alt="">
