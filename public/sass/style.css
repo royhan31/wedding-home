@@ -268,7 +268,7 @@ img {
 
 @media (max-width: 575px) {
   .section-padding {
-    padding: auto;
+    padding: 45px 0;
   }
 }
 
