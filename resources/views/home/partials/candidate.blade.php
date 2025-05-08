@@ -120,18 +120,16 @@
                     <div class="col col-md-6 col-12">
                         <div class="couple-item">
                             <div class="couple-img">
-                                <img src="assets/images/couple/couple-img-1.jpg" alt="">
+                                <img src="{{$female ? $female->image : ""}}" alt="" width="308px" height="443px">
                             </div>
                             <div class="couple-text">
                                 <i><img src="assets/images/couple/bride.svg" alt=""></i>
-                                <h3>Esabella Bell</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna orci auctor
-                                    vitae nisl. fringilla pellesque amet tempus.</p>
+                                <h3>{{$female ? $female->full_name : ""}}</h3>
+                                <p>{{$female ? $female->description : ""}}</p>
                                 <div class="social">
                                     <ul>
-                                        <li><a href="#"><i class="ti-facebook"></i></a></li>
-                                        <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                                        <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                        <li><a href="{{$female ? $female->facebook_url : ""}}"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="{{$female ? $female->instagram_url : ""}}"><i class="ti-instagram"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="couple-bg">
@@ -147,18 +145,16 @@
                     <div class="col col-md-6 col-12">
                         <div class="couple-item">
                             <div class="couple-img">
-                                <img src="assets/images/couple/couple-img-2.jpg" alt="">
+                                <img src="{{$male ? $male->image : ""}}" alt="" width="308px" height="443px">
                             </div>
                             <div class="couple-text">
                                 <i><img src="assets/images/couple/groom.svg" alt=""></i>
-                                <h3>William Max</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna orci auctor
-                                    vitae nisl. fringilla pellesque amet tempus.</p>
+                                <h3>{{$male ? $male->full_name : ""}}</h3>
+                                <p>{{$male ? $male->description : ""}}</p>
                                 <div class="social">
                                     <ul>
-                                        <li><a href="#"><i class="ti-facebook"></i></a></li>
-                                        <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                                        <li><a href="#"><i class="ti-instagram"></i></a></li>
+                                        <li><a href="{{$male ? $male->facebook_url : ""}}"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="{{$male ? $male->instagram_url : ""}}"><i class="ti-instagram"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="couple-bg">
