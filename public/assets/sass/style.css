@@ -7324,7 +7324,7 @@ a.ui-button:active, .ui-button:active,
 .wpo-couple-section .couple-area .couple-item .couple-text .couple-bg svg,
 .wpo-couple-section-s2 .couple-area .couple-item .couple-text .couple-bg svg {
   width: 500px;
-  height: 433px;
+  height: 330px;
 }
 
 @media (max-width: 991px) {
@@ -7347,7 +7347,7 @@ a.ui-button:active, .ui-button:active,
   .wpo-couple-section .couple-area .couple-item .couple-text .couple-bg svg,
   .wpo-couple-section-s2 .couple-area .couple-item .couple-text .couple-bg svg {
     width: 400px;
-    height: 420px;
+    height: 350px;
   }
 }
 

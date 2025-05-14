@@ -15,11 +15,14 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
                                     </div>
                                 </div>
+                                @php
+                                    $maleBankNumber = $male ? $male->bank_number : ""
+                                @endphp
                                 <div class="office-info-text mb-4">
                                     <h2>{{$male ? $male->bank_name : ""}}</h2>
-                                    <p>{{$male ? $male->bank_number : ""}}</p>
+                                    <p>{{$maleBankNumber}}</p>
                                     <p>{{$male ? $male->full_name : ""}}</p>
-                                    <button class="btn pull-right text-white" style="background: #abbbd4" onclick="copyToClipboard(this,'test')">Copy</button>
+                                    <button class="btn pull-right text-white" style="background: #abbbd4" onclick="copyToClipboard(this,'{{$maleBankNumber}}')">Copy</button>
                                 </div>
                             </div>
                         </div>
@@ -30,11 +33,14 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
                                     </div>
                                 </div>
+                                @php
+                                    $femaleBankNumber = $female ? $female->bank_number : ""
+                                @endphp
                                 <div class="office-info-text mb-4">
                                     <h2>{{$female ? $female->bank_name : ""}}</h2>
-                                    <p>{{$female ? $female->bank_number : ""}}</p>
+                                    <p>{{$femaleBankNumber}}</p>
                                     <p>{{$female ? $female->full_name : ""}}</p>
-                                    <button class="btn pull-right text-white" style="background: #abbbd4" onclick="copyToClipboard(this,'test')">Copy</button>
+                                    <button class="btn pull-right text-white" style="background: #abbbd4" onclick="copyToClipboard(this,'{{$femaleBankNumber}}')">Copy</button>
                                 </div>
                             </div>
                         </div>
