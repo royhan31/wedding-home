@@ -120,7 +120,7 @@
                     <div class="col col-md-6 col-12">
                         <div class="couple-item">
                             <div class="couple-img">
-                                <img src="{{$female ? $female->female : ""}}" alt="" width="308px" height="443px">
+                                <img src="{{$female ? $female->image : ""}}" alt="" width="308px" height="443px">
                             </div>
                             <div class="couple-text">
                                 <i><img src="assets/images/couple/bride.svg" alt=""></i>
