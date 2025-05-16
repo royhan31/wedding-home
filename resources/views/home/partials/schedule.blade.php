@@ -1,13 +1,11 @@
 <section class="wpo-event-section section-padding pt-0" id="event">
     <div class="container">
         <div class="wpo-section-title">
-            <h4 class="poort-text poort-in-right">When & Where</h4>
             <h2 class="poort-text poort-in-right">Our Wedding Programs</h2>
         </div>
         <div class="wpo-event-main">
             <div class="event-description">
-                <p>Monday, 12 Apr. 2024, 2.00 PM – 11.00 PM</p>
-                <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
+                {{-- <p>Monday, 12 Apr. 2024, 2.00 PM – 11.00 PM</p> --}}
             </div>
             <div class="wpo-event-wrap">
                 <div class="wpo-event-inner">

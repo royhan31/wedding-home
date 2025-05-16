@@ -92,7 +92,7 @@
         });
 
         function saveToCalendar() {
-            var event = "The Wedding Of "+ '{{$male ? $male->name : ""}}' +" & " + '{{ $female ? $female->name : ""}}';
+            var event = "The Wedding Of "+ '{{$male ? $male->name : ""}}' +" dan " + '{{ $female ? $female->name : ""}}';
             var month = '{{$data ? $data->wedding_date->format('m') : ""}}'
             var date = '{{$data ? $data->wedding_date->format('d') : ""}}'
             var th  = '{{$data ? $data->wedding_date->format('Y') : ""}}'
