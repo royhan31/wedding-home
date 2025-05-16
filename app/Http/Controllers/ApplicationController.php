@@ -7,6 +7,7 @@ use App\Models\Application;
 use App\Models\MaleCandidate;
 use App\Models\FemaleCandidate;
 use App\Models\Schedule;
+use App\Models\Story;
 use Carbon\Carbon;
 
 class ApplicationController extends Controller
@@ -37,12 +38,14 @@ class ApplicationController extends Controller
         $male = MaleCandidate::first();
         $female = FemaleCandidate::first();
         $schedule = Schedule::orderBy("position", "ASC")->get();
+        $stories = Story::orderBy("position", "ASC")->get();
 
         return view("home.index", [
             "data" => $data,
             "male" => $male,
             "female" => $female,
-            "schedule" => $schedule
+            "schedule" => $schedule,
+            "stories" => $stories
         ]);
     }
 }

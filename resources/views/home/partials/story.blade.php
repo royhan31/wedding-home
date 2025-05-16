@@ -1,15 +1,17 @@
 <section class="wpo-story-section section-padding pb-0" id="story">
     <div class="container">
         <div class="wpo-section-title">
-            <h4 class="poort-text poort-in-right">Our Story</h4>
-            <h2 class="poort-text poort-in-right">Our Sweet Love Story</h2>
+            <h4 class="poort-text poort-in-right">Love Story</h4>
         </div>
         <div class="wpo-story-wrap">
+            @foreach ( $stories as $story )
+            
+            
             <div class="wpo-story-item">
                 <div class="row">
                     <div class="col col-lg-6 col-12">
                         <div class="wpo-story-img">
-                            <img src="assets/images/story/story-1.jpg" alt="">
+                            <img src="{{$story->image}}" alt="">
                         </div>
                     </div>
                     <div class="col col-lg-6 col-12">
@@ -18,16 +20,15 @@
                                 <img src="assets/images/story/pin.svg" alt="">
                             </div>
                             <i><img src="assets/images/story/f-shape-1.png" alt=""></i>
-                            <h2>First Time We Meet</h2>
-                            <span>12 Feb 2016</span>
-                            <p>Lorem ipsum dolor sit amet, constetur kiy adicng elit. Ultricies nulla mi tempus
-                                mcorper for praesent. Ultricies interdum hy volutpat morbi nam ornare neque elit
-                                leo, diam. Malesuada enim ac amurna tempor asr btyrfgvel duis.</p>
+                            <h2>{{$story->title}}</h2>
+                            <span>{{$story->story_date}}</span>
+                            <p>{{$story->description}}</p>
                             <i><img src="assets/images/story/f-shape-2.png" alt=""></i>
                         </div>
                     </div>
                 </div>
             </div>
+            @endforeach
         </div>
     </div> <!-- end container -->
     <div class="flower-shape-1">

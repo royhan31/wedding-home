@@ -5,7 +5,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-12 col-12">
                     <div class="wpo-about-img wow fadeInLeftSlow" data-wow-duration="1600ms" style="visibility: visible; animation-duration: 1600ms; animation-name: fadeInLeftSlow;">
                         <div class="about-right-img">
-                            <img src="assets/images/about/img-1.jpg" alt="">
+                            <img src="{{$data ? $data->image : ""}}" alt="">
                         </div>
                     </div>
                 </div>
