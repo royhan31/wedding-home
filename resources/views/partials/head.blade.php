@@ -5,7 +5,7 @@
     <meta name="author" content="wpOceans" />
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
     <title>
-        The Wedding Of {{$male && $female ? $male->name." And ".$female->name : ""}}
+        The Wedding Of {{$male && $female ? $male->name." and ".$female->name : ""}}
     </title>
     <link href="{{ asset('css/themify-icons.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet" />
