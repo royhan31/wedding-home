@@ -4,7 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="wpOceans">
     <link rel="shortcut icon" type="image/png" href="{{ asset('images/favicon.png')}}">
-    @yield("title")
+    <title>
+        The Wedding Of {{$male && $female ? $data->male->name." And ".$data->female->name : ""}}
+    </title>
     <link href="{{ asset('assets/css/themify-icons.css')}}" rel="stylesheet">
     <link href="{{ asset('assets/css/font-awesome.min.css')}}" rel="stylesheet">
     <link href="{{ asset('assets/css/flaticon.css')}}" rel="stylesheet">

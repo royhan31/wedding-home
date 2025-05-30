@@ -5,7 +5,6 @@
 @include('home.partials.head')
 
 <body>
-    
     <!-- start page-wrapper -->
     <div class="page-wrap scrollspy-example" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" tabindex="0">
         <!-- start preloader -->
