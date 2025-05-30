@@ -8,6 +8,7 @@ use App\Models\MaleCandidate;
 use App\Models\FemaleCandidate;
 use App\Models\Schedule;
 use App\Models\Story;
+use App\Models\Audience;
 use Carbon\Carbon;
 
 class ApplicationController extends Controller
@@ -39,13 +40,15 @@ class ApplicationController extends Controller
         $female = FemaleCandidate::first();
         $schedule = Schedule::orderBy("position", "ASC")->get();
         $stories = Story::orderBy("position", "ASC")->get();
+        $audiences = Audience::orderBy("created_at", "DESC")->paginate(15);
 
         return view("home.index", [
             "data" => $data,
             "male" => $male,
             "female" => $female,
             "schedule" => $schedule,
-            "stories" => $stories
+            "stories" => $stories,
+            "audiences" => $audiences,
         ]);
     }
 }

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ApplicationController as Application;
+use App\Http\Controllers\AudienceController as Audience;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +21,5 @@ use App\Http\Controllers\ApplicationController as Application;
 
 Route::get('/', [Application::class, 'index'])->name('invitation');
 Route::get('/home', [Application::class, 'home'])->name('home');
+Route::post('/home/audience', [Audience::class, 'store'])->name('audience.store');
 

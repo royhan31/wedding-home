@@ -4,7 +4,6 @@
 
 @include('home.partials.head')
 
-
 <body>
     
     <!-- start page-wrapper -->
@@ -71,6 +70,8 @@
     <script src="{{ asset('assets/js/gsap-active.js')}}"></script>
     <!-- Custom script for this template -->
     <script src="{{ asset('assets/js/script.js')}}"></script>
+
+    @stack("script")
 
     <script>
          if ($("#clock").length) {

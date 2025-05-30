@@ -112,7 +112,7 @@
     </div> <!-- end container -->
 </section> --}}
 
-<section class="wpo-couple-section section-padding pt-2" id="couple">
+<section class="wpo-couple-section section-padding pt-2" id="candidate">
     <div class="container">
         <div class="couple-area clearfix">
             <div class="couple-wrap">

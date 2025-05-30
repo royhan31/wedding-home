@@ -6,26 +6,27 @@
                     <div class="wpo-section-title">
                         <h2>Kehadiran</h2>
                     </div>
-                    <form method="post" class="contact-validation-active" id="contact-form-main">
+                    <div id="audience-alert"></div>
+                    <form method="post" class="contact-validation-active">
                         <div>
                             <input type="text" class="form-control" name="name" id="name" placeholder="Nama">
                         </div>
                         <div>
-                           <textarea class="form-control" name="" id="" cols="30" rows="100" placeholder="Ucapan"></textarea>
+                           <textarea class="form-control" name="description" id="description" cols="30" rows="100" placeholder="Ucapan"></textarea>
                         </div>
                         <div class="radio-buttons">
                             <p>
-                                <input type="radio" id="attend" name="radio-group" checked>
+                                <input type="radio" id="attend" name="status" value="1" checked>
                                 <label for="attend">Hadir</label>
                             </p>
                             <p>
-                                <input type="radio" id="not" name="radio-group">
+                                <input type="radio" id="not" name="status" value="0">
                                 <label for="not">Tidak bisa hadir</label>
                             </p>
                         </div>
                       
                         <div class="submit-area">
-                            <button type="submit" class="theme-btn">Kirim</button>
+                            <button type="button" onclick="storeData()" class="theme-btn">Kirim</button>
                             <div id="c-loader">
                                 <i class="ti-reload"></i>
                             </div>
@@ -42,3 +43,44 @@
     <div class="left-shape-1"><img src="assets/images/rsvp/l-flower1.png" alt=""></div>
     <div class="left-shape-2"><img src="assets/images/rsvp/l-flower2.png" alt=""></div>
 </section>
+
+@push("script")
+<script>
+    function storeData(){
+        let token = "{{ csrf_token() }}";
+        
+        const data = {
+            "_token": token,
+            "name": $('input[name="name"]').val(),
+            "description": $('#description').val(),
+            "status": $('input[name="status"]:checked').val(),
+        }
+
+         $.ajax({
+                url: "{{ route('audience.store') }}",
+                method: 'post',
+                data: data, // prefer use serialize method
+                success:function(data){ 
+                    $("#audience-alert").html(`<div id="audience-alert-message" class="alert alert-light text-center wow fadeInUp" role="alert" data-wow-duration="1200ms"> Terima kasih </div>`)
+                    setTimeout(
+                        function() {
+                                var id200 = document.getElementById("audience-alert-message");
+                                id200.style.transition = "opacity " + 3 + "s";
+                                id200.style.opacity = 0;
+                                id200.addEventListener("transitionend", function() {
+                                id200.style.display = "none";
+                            });
+                        }, 4000
+                    );
+                },
+                error: function(xhr, textStatus, error){
+                   
+                    console.log(xhr.responseJSON);
+                }
+            });
+
+
+       
+    }
+</script>
+@endpush
