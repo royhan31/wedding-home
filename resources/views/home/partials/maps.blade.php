@@ -13,7 +13,7 @@
                                 <div class="wpo-blog-content text-center">
                                     <h2>Lokasi mempelai pria : </h2>
                                     <p>{{$male ? $male->address : ""}}</p>
-                                    <a class="btn mt-5 text-white" style="background: #abbbd4; text-align: center;" target="_blank" href="https://www.google.com/maps/search/?api=1&query={{$male ? $male->location : "0,0"}}" >Google Map</a>
+                                    <a class="btn mt-5 text-white" style="background: #abbbd4; text-align: center;" href="https://www.google.com/maps/search/?api=1&query={{$male ? $male->location : "0,0"}}" >Google Map</a>
                                 </div>
                                 
                             </div>
@@ -26,7 +26,7 @@
                                 <div class="wpo-blog-content text-center">
                                     <h2>Lokasi mempelai wanita : </h2>
                                     <p>{{$female ? $female->address : ""}}</p>
-                                    <a class="btn mt-5 text-white" style="background: #abbbd4; text-align: center;" target="_blank" href="https://www.google.com/maps/search/?api=1&query={{$female ? $female->location : "0,0"}}" >Google Map</a>
+                                    <a class="btn mt-5 text-white" style="background: #abbbd4; text-align: center;" href="https://www.google.com/maps/search/?api=1&query={{$female ? $female->location : "0,0"}}" >Google Map</a>
 
                                 </div>
                             </div>
