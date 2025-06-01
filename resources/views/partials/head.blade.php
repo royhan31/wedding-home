@@ -23,4 +23,5 @@
     <link href="{{ asset('css/jquery.fancybox.css')}}" rel="stylesheet" />
     <link href="{{ asset('css/odometer-theme-default.css')}}" rel="stylesheet" />
     <link href="{{ asset('sass/style.css')}}" rel="stylesheet" />
+    
 </head>

@@ -36,6 +36,11 @@
         @include("home.partials.schedule")
         <!-- end wpo-event-section -->
 
+        <!-- start wpo-event-section -->
+        @include("home.partials.maps")
+        <!-- end wpo-event-section -->
+
+
         <!-- start wpo-story-section -->
         @include("home.partials.story")
         <!-- end story-section -->
