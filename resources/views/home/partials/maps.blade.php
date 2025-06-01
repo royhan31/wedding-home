@@ -23,9 +23,11 @@
                             <div class="wpo-blog-item wow fadeInUp" data-wow-duration="1000ms">
                                  <div class="wpo-blog-img" id="map2" style="height: 400px">
                                 </div>
-                                <div class="wpo-blog-content">
-                                    <h2 class="text-center">Lokasi mempelai wanita : </h2>
-                                      <p class="text-center">{{$female ? $female->address : ""}}</p>
+                                <div class="wpo-blog-content text-center">
+                                    <h2>Lokasi mempelai wanita : </h2>
+                                    <p>{{$female ? $female->address : ""}}</p>
+                                    <a class="btn mt-5 text-white" style="background: #abbbd4; text-align: center;" target="_blank" href="https://www.google.com/maps/search/?api=1&query={{$female ? $female->location : "0,0"}}" >Google Map</a>
+
                                 </div>
                             </div>
                         </div>
