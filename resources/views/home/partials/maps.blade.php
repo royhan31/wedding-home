@@ -38,16 +38,13 @@
             </div> <!-- end container -->
         </section>
 @push("script")
-  <script src="js/leaflet/leaflet.js"></script>
 <script>
-    
-
     var map = L.map('map').setView([{{$male ? $male->location : "0,0"}}], 13);
     var tiles =L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
       maxZoom: 19,
       subdomains:['mt0']
     }).addTo(map);
-
+    
     var marker = L.marker([{{$male ? $male->location : "0,0"}}]).addTo(map);
 
     var map2 = L.map('map2').setView([{{$female ? $female->location : "0,0"}}], 13);
